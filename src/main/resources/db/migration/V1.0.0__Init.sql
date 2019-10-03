@@ -1,0 +1,16 @@
+CREATE TABLE USER(
+id IDENTITY NOT NULL PRIMARY KEY,
+first_Name VARCHAR(60) NOT NULL,
+last_Name VARCHAR(60)   NOT  NULL,
+user_name VARCHAR(60)   NOT  NULL
+);
+
+CREATE INDEX idx_user_name ON USER(user_name);
+
+CREATE TABLE TRIP(
+id IDENTITY NOT NULL PRIMARY KEY,
+trip_name VARCHAR(200) NOT NULL
+
+);
+
+CREATE INDEX idx_trip_name ON TRIP(trip_name);
